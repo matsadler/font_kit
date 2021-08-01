@@ -1,0 +1,11 @@
+[package]
+name = "font_kit_rb"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+font-kit = "0.10"
+magnus = { git = "https://github.com/matsadler/magnus.git" }

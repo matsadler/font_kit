@@ -1,0 +1,26 @@
+= FontKit
+
+Ruby bindings to the Rust {font-kit library}[https://github.com/servo/font-kit]
+
+== Status
+
+This is just an example demonstrating it is possible to bind +font-kit+ to
+Ruby. It likely isn't very useful yet, and may not see any further development.
+
+== Install
+
+This gem requires a Rust compiler and the +cargo+ build tool to build the gem's
+native extension. See https://www.rust-lang.org/tools/install for how to
+install Rust. +cargo+ is usually part of the Rust installation.
+
+Additionally +libclang+ is required. This is generally part of the +llvm+ or
++clang+ package for your operating system. On macOS it can be installed via
+Homebrew like:
+
+  brew install llvm
+
+== Test
+
+Run
+
+  rake test

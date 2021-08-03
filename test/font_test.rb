@@ -24,5 +24,23 @@ module FontKit
       assert { font.properties.stretch == 1.0 }
     end
 
+    def test_woff2_style
+      font = FontKit::Font.from_path(File.expand_path("fixtures/fa-regular-400.woff2", __dir__), 0)
+
+      assert { font.properties.style == :normal }
+    end
+
+    def test_woff2_weight
+      font = FontKit::Font.from_path(File.expand_path("fixtures/fa-regular-400.woff2", __dir__), 0)
+
+      assert { font.properties.weight == 400.0 }
+    end
+
+    def test_woff2_stretch
+      font = FontKit::Font.from_path(File.expand_path("fixtures/fa-regular-400.woff2", __dir__), 0)
+
+      assert { font.properties.stretch == 1.0 }
+    end
+
   end
 end

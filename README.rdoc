@@ -7,6 +7,15 @@ Ruby bindings to the Rust {font-kit library}[https://github.com/servo/font-kit]
 This is just an example demonstrating it is possible to bind +font-kit+ to
 Ruby. It likely isn't very useful yet, and may not see any further development.
 
+== Font format support
+
+Rust's font-kit delegates to the system font library, so the supported font
+formats depend on your system. The usual suspects like .ttf, .otf, .woff, and
+.woff2 should be supported.
+
+On BSD/Linux systems you must have at least version 2.10.2 of freetype to
+support .woff2 fonts.
+
 == Install
 
 This gem requires a Rust compiler and the +cargo+ build tool to build the gem's
